@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- L'attribut "lang" permet d'identifier la langue dans lequel est écrit le site.Pour les personnes non ou malvoyantes, cela permet aussi de savoir dans quelle langue est le site-->
+
+<head>
+    <!-- Entête de la page -->
+    <meta charset="UTF-8"/> <!-- L'encodage utilisé pour le site-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Balise pour la compatibilité sur mobile-->
+    <meta name="description" content="Réservia, votre outil de planification de vacances !"> <!-- La balise meta description sert à l'internaute dans sa recherche. Cela lui permet de savoir si le site qu'il compte visiter va correspondre à sa recherche -->
+    <title>Reservia</title> <!-- La balise title définie le nom du site-->
+    <link rel="stylesheet" href="css/style.css"> <!-- Fichier contenant le style et la mise en page du site -->
+    <link rel="stylesheet" href="css/media-queries.css"> <!-- Fichier permettant la compatibilité avec toutes les tailles d'écrans -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> <!-- CDN utilisé pour les icônes Font Awesome -->
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Header -->
+        <header>
+            <img src="images/logo/Reservia.svg" alt="Logo Reservia">
+
+            <nav>
+                <ul>
+                    <li class="li-log">
+                        <a href="#logements">Hébergements</a>
+                    </li>
+                    <li class="li-act">
+                        <a href="#activités">Activités</a> 
+                    </li>
+                    <li class="li-ins">
+                        <a href="#inscription">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- Premier Titre -->
+
+        <section class="Titre-1">
+            <div class="headertitle">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+        </section>
+
+        <!-- Section 1 : Barre de Recherche et Filtres -->
+
+        <section class="search-filter">
+
+            <div class="search-bar">
+
+                <i class="fas fa-map-marker-alt"></i>
+                <input class="city" type="search" placeholder=" Marseille, France">
+
+                <button class="btnsearch" type="submit">
+                    <span>Rechercher</span>
+                    <i class="fas fa-search"></i>
+                </button>
+            
+            </div>
+
+            <div class="filter">
+                <h3>Filtres</h3>
+
+                <button><span class="icon">
+                    <i class="fas fa-money-bill-wave fa-fw"></i>
+                    </span>Économique</button>
+                <button><span class="icon">
+                    <i class="fas fa-child fa-fw"></i>
+                    </span>Familial</button>
+                <button><span class="icon">
+                    <i class="fas fa-heart fa-fw"></i>
+                    </span>Romantique</button>
+                <button><span class="icon">
+                    <i class="fas fa-dog fa-fw"></i>
+                    </span>Animaux autorisés</button>
+            </div>
+
+        </section>
+
+    </div>
+</body>
