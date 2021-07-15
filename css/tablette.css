@@ -1,0 +1,20 @@
+/* Header Tablette */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    header {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo.navbar button";
+    }
+}
+
+/* Recherche Tablette */
+
+@media screen and (min-width: 601px) {
+    .searchFormSubmitinputText {
+      display: block;
+    }
+    .searchFormSubmitinputIcon {
+      display: none;
+    }
+  }
