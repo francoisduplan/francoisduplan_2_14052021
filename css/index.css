@@ -119,6 +119,7 @@ width: 14rem;
 font-size: 1rem;
 font-weight: bold;
 font-family: "Raleway", "Sans serif";
+outline: 0.1rem solid #FFFFFF;
 }
 .search_form_text_input::placeholder {
 font-family: "Raleway", "Sans serif";
@@ -329,13 +330,46 @@ height: 8.75rem;
 
 /* Section Hébergements Responsive*/
 
+@media screen and (max-width: 1024px) {
+  .hosting {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .hostingPopular {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
+  }
+  .hostingPopularTitle {
+    grid-column: 1/-1;
+  }
+}
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .hostingMain {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+@media screen and (max-width: 768px) and (min-width: 650px) {
+  .hostingMain {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hostingMain {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hostingPopular {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
+  }
+}
 
 
 /* Section Activités */
@@ -406,6 +440,21 @@ margin: 1rem;
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 12rem 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 12rem 12rem 12rem;
+  }
+}
 
 /* Footer */
 
@@ -418,7 +467,6 @@ display: flex;
 max-width: 100%;
 width: 1500px;
 margin: auto;
-padding: 0 2rem;
 box-sizing: border-box;
 }
 .footerColumnwrapperColumn {
@@ -428,9 +476,10 @@ padding: 2rem 2rem;
 .footerColumnwrapperColumnLink {
 display: block;
 margin: 1rem 0;
+}
+.footerColumnwrapperColumnLink:hover {
 text-decoration: underline;
 }
-
 
 
  
