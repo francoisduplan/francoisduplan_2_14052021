@@ -44,11 +44,11 @@
     #button-research {
       display: none;
     }
-    
+
     #icon-glass {
       display: block;
       position: absolute;
-      right: -20px;
+      right: -15px;
       border-radius: 15px;
     }
   }
