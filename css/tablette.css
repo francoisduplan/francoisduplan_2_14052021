@@ -1,20 +1,120 @@
-/* Header Tablette */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-  header {
-  grid-template-columns: auto 1fr auto auto;
-  grid-template-areas: "logo.navbar button";
+  @media screen and (max-width: 1024px) {
+    main {
+      width: 92%;
+    }
+    .marseille-cases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .bloc-most-popular {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 560px;
+    }
+    .bloc-most-popular .most-populars {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      padding-top: 25px;
+    }
+    .bloc-most-popular .most-populars .most-popular {
+      height: 120px;
+    }
+    .marseille-activities {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin-bottom: 370px;
+      grid-template-areas: 
+    "activity-1 activity-2"
+    "activity-4 activity-3"
+    "activity-5 activity-6";
+    }
   }
-}
-
-/* Recherche Tablette */
-
-@media screen and (min-width: 601px) {
-  .searchFormSubmitinputText {
-    display: block;
+  
+  @media screen and (max-width: 768px) {
+    .blocs {
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+    .marseille-cases {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .navbar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+      "logo navbar-link-sign-up"
+      "navbar-link-accomodation navbar-link-activities";
+    }
+    .navbar img {
+      grid-area: logo;
+    }
+    .navbar #navbar-link-accomodation {
+      flex-direction: column-reverse;
+      grid-area: navbar-link-accomodation;
+    }
+    .navbar #navbar-link-activities {
+      flex-direction: column-reverse;
+      grid-area: navbar-link-activities;
+    }
+    .navbar #navbar-link-activities .underline-effect {
+      background-color: #dbdbdb;
+    }
+    .navbar #navbar-link-sign-up {
+      display: flex;
+      justify-content: flex-end;
+      grid-area: navbar-link-sign-up;
+    }
+  
+    .research-box {
+      position: relative;
+    }
+  
+    .research-bar {
+      width: 500px;
+      height: 49px;
+    }
+    #button-research {
+      display: none;
+    }
+    #icon-glass {
+      display: block;
+      position: absolute;
+      right: -20px;
+      border-radius: 15px;
+    }
+    .most-popular-case-img img {
+      min-width: 145px;
+    }
+    .marseille-activities {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas:
+      "activity-1"
+      "activity-2"
+      "activity-3"
+      "activity-4"
+      "activity-5"
+      "activity-6";
+      height: 1500px;
+      margin-bottom: 350px;
+  
+    }
+    .footer-blocs {
+      display: inline-flex;
+      flex-direction: column;
+    }
+    .footer-blocs .footer-bloc {
+      padding: 10px 20px;
+    }
   }
-  .searchFormSubmitinputIcon {
-    display: none;
-  }
-}
+  
+  
+  
