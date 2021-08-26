@@ -522,7 +522,7 @@ body {
   }
   
   .footer-bloc {
-    padding: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
   }
