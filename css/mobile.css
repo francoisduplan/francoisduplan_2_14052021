@@ -34,10 +34,22 @@
     }
   }
 
+  
   @media screen and (max-width: 550px) {
     .most-popular-case-img img {
       min-width: 125px;
       max-width: 125px;
+    }
+
+    #button-research {
+      display: none;
+    }
+    
+    #icon-glass {
+      display: block;
+      position: absolute;
+      right: -20px;
+      border-radius: 15px;
     }
   }
   
